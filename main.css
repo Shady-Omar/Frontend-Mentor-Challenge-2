@@ -114,14 +114,18 @@ body {
 }
 
 @media (max-width: 767px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
     .container {
-        width: 375px;
+        width: 350px;
         top: 50%;
         margin-right: 30px;
     }
 
     .container img {
-        width: 375px;
+        width: 350px;
     }
 
     .container .plan {
@@ -131,5 +135,6 @@ body {
 
     .container button {
         padding: 17px 0;
+        width: 315px;
     }
 }
