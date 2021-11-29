@@ -113,6 +113,12 @@ body {
     color: hsl(223, 47%, 23%);
 }
 
+.attribution {
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     .container {
         width: 350px;
