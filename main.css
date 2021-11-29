@@ -116,8 +116,7 @@ body {
 @media (max-width: 767px) {
     .container {
         width: 350px;
-        top: 55%;
-        margin-right: 30px;
+        top: 60%;
     }
 
     .container img {
