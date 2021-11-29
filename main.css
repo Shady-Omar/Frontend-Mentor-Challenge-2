@@ -1,0 +1,135 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    height: 700px;
+}
+
+.container {
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 20px 1px hsl(224, 23%, 55%);
+}
+
+.container img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 30px;
+}
+
+.container p {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin: 0px 42px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.container .plan {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 55px;
+    border-radius: 9px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    align-items: center;
+}
+
+.container .plan .music-plan {
+    display: flex;
+    margin: 0px 5px;
+}
+
+.container .plan .music-plan span {
+    font-weight: 900;
+    margin-left: 15px;
+    position: relative;
+    color: hsl(223, 47%, 23%);
+}
+
+.container .plan .music-plan span::after {
+    content: '$59.99/year';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .plan span a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.container .plan span a:hover {
+    color: #766cf1;
+}
+
+.container button {
+    width: 340px;
+    padding: 15px 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    text-decoration: none;
+    display: block;
+    font-weight: 900;
+    margin: 30px auto;
+    box-shadow: 0px 5px 20px 1px hsl(224, 23%, 55%);
+}
+
+.container button:hover {
+    background-color: #766cf1;
+}
+
+.container #cancel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 30px auto;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.container #cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 375px;
+        top: 50%;
+        margin-right: 30px;
+    }
+
+    .container img {
+        width: 375px;
+    }
+
+    .container .plan {
+        margin: 25px 18px;
+        padding: 15px;
+    }
+
+    .container button {
+        padding: 17px 0;
+    }
+}
